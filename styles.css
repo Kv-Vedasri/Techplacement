@@ -5,88 +5,58 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    animation: gradient 10s ease infinite;
-    background-size: 400% 400%;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.container {
+    background: #11111b;
+  }
+  
+  .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: #1e1e2e;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
     from {
-        opacity: 0;
+      opacity: 0;
     }
     to {
-        opacity: 1;
+      opacity: 1;
     }
-}
-
-form {
+  }
+  
+  form {
     margin-bottom: 20px;
-}
-
-input[type="text"] {
+  }
+  
+  input[type="text"] {
     padding: 10px;
     width: 200px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-button {
+  }
+  
+  button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background: #00c6ff;
-    color: white;
+    background: #b4befe;
+    color: black;
     cursor: pointer;
-    animation: buttonHover 3s infinite;
-}
-
-@keyframes buttonHover {
-    0% {
-        background-color: #00c6ff;
-    }
-    50% {
-        background-color: #0078ff;
-    }
-    100% {
-        background-color: #00c6ff;
-    }
-}
-
-button:hover {
-    background: #0078ff;
-}
-
-#weather-info {
+  }
+  
+  #weather-info {
     display: none;
     text-align: left;
     animation: fadeIn 2s ease-in-out;
-}
-
-@media (max-width: 600px) {
-    input[type="text"], button {
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    input[type="text"],
+    button {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
     }
-}
+  }
